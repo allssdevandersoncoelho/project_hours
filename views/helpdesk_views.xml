@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+       <record model="ir.ui.view" id="view_task_form2_teste">
+            <field name="name">project.task.form.teste</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="hr_timesheet.view_task_form2_inherited" />
+            <field name="arch" type="xml">
+               <xpath expr="//field[@name='unit_amount']" position="before">            
+                  <field name="date_init"/>
+                  <field name="date_final"/>
+               </xpath>
+
+        </field>
+
+    </record>
+
+
+</odoo>
