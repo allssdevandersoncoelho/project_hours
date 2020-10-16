@@ -11,9 +11,20 @@
                   <field name="date_final"/>
                </xpath>
 
+               <xpath expr="//notebook" position="inside">
+                  <page string="Registros" name="registers">
+                        <button name="get_register" type="object" string="Consultar" class="btn btn-primary"/>
+                        <field name="register_ids">
+                           <tree>
+                              <field name="call_type"/> 
+                              <field name="source_number" widget="phone"/>
+                              <field name="call_datetime"/>
+                              <field name="destine_number"/>
+                              <field name="call_code"/>
+                           </tree>
+                        </field>
+                  </page>
+               </xpath>
         </field>
-
     </record>
-
-
 </odoo>

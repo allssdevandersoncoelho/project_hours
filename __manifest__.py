@@ -9,7 +9,14 @@
   ],
 
   'data': [
+    # Data
+    'data/ir.config_parameter.xml',
+
+    # Views
     'views/helpdesk_views.xml',
+
+    # Security
+    'security/ir.model.access.csv'
   ],
   'installable': True,
   'auto_install': False,
